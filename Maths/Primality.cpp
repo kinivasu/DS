@@ -1,9 +1,11 @@
+//! Check for Prime Number
+
 #include <bits/stdc++.h>
 using namespace std;
 
 bool isPrime(int x)
 {
-    if (x == 1)
+    if (x <= 1) //? Negative or zero or 1
         return false;
     for (int i = 2; i <= sqrt(x); i++) //! NOTE THE <= in this loop, very imp
     {
